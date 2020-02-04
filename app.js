@@ -7,7 +7,10 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
-
+const asyncHandler = fn => (req, res, next) =>
+  Promise
+    .resolve(fn(req, res, next))
+    .catch(next)
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
