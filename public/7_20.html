@@ -1,0 +1,441 @@
+<html>
+
+<head>
+  <title>dd</title>  
+  <meta charset="EUC-KR">
+  <!-- <link rel="stylesheet" href="/stylesheets/style.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <style>
+    table {
+      border-spacing: 0;
+    
+      border: 1px solid black;
+    }
+    
+    th, td {
+      text-align: left;
+    
+      border: 1px solid black;
+    }
+
+
+
+ 
+
+
+    </style>
+  
+
+ 
+</head>
+
+<script type="text/javascript">
+  function change()
+  {
+    $(this).css("background-color", "red");
+  }
+  
+  
+</script> 
+
+<body>
+
+<p><button id="backgroundinput" >input background img</button></p> 
+<p><button id="prepareremovalButton" >click before selecting squares for deletion</button></p> 
+<p><button id="removeButton" >remove red square</button></p>
+<p><button id="prepareadditionButton" >click before selecting adding spot</button></p>
+<p><button id="addButton" >add square</button></p> 
+
+<table id="myTable" width = "1" height= "1" table celllspacing = 0 cellpadding = 0 >
+  <tr > 
+    <th id="box_1_1" ><img id="0" src="/images/a_01.gif" style="display:block;" "max-width: 0.1%; height: 0,1;"/></th> 
+    <th id="box_1_2" ><img id="1" src="/images/a_02.gif" style="display:block;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_1_3" ><img id="2" src="/images/a_03.gif" style="display:block;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_1_4" ><img id="3" src="/images/a_04.gif" style="vertical-align: bottom;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_1_5" ><img id="4" src="/images/a_05.gif" style="vertical-align: bottom;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_1_6" ><img id="5" src="/images/a_06.gif" style="vertical-align: bottom;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_1_7"><img id="6" src="/images/a_07.gif"/></th>
+    <th id="box_1_8"><img id="7" src="/images/a_08.gif"/></th>
+    <th id="box_1_9"><img id="8" src="/images/a_09.gif"/></th>
+    <th id="box_1_10"><img id="9" src="/images/a_10.gif"/></th>
+    <th id="box_1_11"><img id="10" src="/images/a_11.gif"/></th>
+    <th id="box_1_12"><img id="11" src="/images/a_12.gif"/></th>
+    <th id="box_1_13"><img id="12" src="/images/a_13.gif"/></th>
+    <th id="box_1_14"><img id="13" src="/images/a_14.gif"/></th>
+    <th id="box_1_15"><img id="14" src="/images/a_15.gif"/></th>
+    <th id="box_1_16"><img id="15" src="/images/a_16.gif"/></th>
+    <th id="box_1_17"><img id="16" src="/images/a_17.gif"/></th>
+    <th id="box_1_18"><img id="17" src="/images/a_18.gif"/></th>
+    <th id="box_1_19"><img id="18" src="/images/a_19.gif"/></th>
+    <th id="box_1_20"><img id="19" src="/images/a_20.gif"/></th>
+
+  </tr>
+  <tr >
+    <th id="box_2_1" height = "0" width = "0"><img id="20" src="/images/a_21.gif" /></th>
+    <th id="box_2_2" height = "0" width = "0"><img id="21" src="/images/a_22.gif"/></th>
+    <th id="box_2_3" height = "0" width = "0"><img id="22" src="/images/a_23.gif"/></th>
+    <th id="box_2_4" height = "0" width = "0"><img id="23" src="/images/a_24.gif"/></th>
+    <th id="box_2_5" height = "0" width = "0"><img id="24" src="/images/a_25.gif"/></th>
+    <th id="box_2_6" height = "0" width = "0"><img id="25" src="/images/a_26.gif"/></th>
+    <th id="box_2_7"><img id="26" src="/images/a_27.gif"/></th>
+    <th id="box_2_8"><img id="27" src="/images/a_28.gif"/></th>
+    <th id="box_2_9"><img id="28" src="/images/a_29.gif"/></th>
+    <th id="box_2_10"><img id="29" src="/images/a_30.gif"/></th>
+    <th id="box_2_11"><img id="30" src="/images/a_31.gif"/></th>
+    <th id="box_2_12"><img id="31" src="/images/a_32.gif"/></th>
+    <th id="box_2_13"><img id="32" src="/images/a_33.gif"/></th>
+    <th id="box_2_14"><img id="33" src="/images/a_34.gif"/></th>
+    <th id="box_2_15"><img id="34" src="/images/a_35.gif"/></th>
+    <th id="box_2_16"><img id="35" src="/images/a_36.gif"/></th>
+    <th id="box_2_17"><img id="36" src="/images/a_37.gif"/></th>
+    <th id="box_2_18"><img id="37" src="/images/a_38.gif"/></th>
+    <th id="box_2_19"><img id="38" src="/images/a_39.gif"/></th>
+    <th id="box_2_20"><img id="39" src="/images/a_40.gif"/></th>
+  </tr>
+  <tr >
+    <th id="box_3_1" height = "0" width = "0"><img id="40" src="/images/a_41.gif" /></th>
+    <th id="box_3_2" height = "0" width = "0"><img id="41" src="/images/a_42.gif"/></th>
+    <th id="box_3_3" height = "0" width = "0"><img id="42" src="/images/a_43.gif"/></th>
+    <th id="box_3_4" height = "0" width = "0"><img id="43" src="/images/a_44.gif"/></th>
+    <th id="box_3_5" height = "0" width = "0"><img id="44" src="/images/a_45.gif"/></th>
+    <th id="box_3_6" height = "0" width = "0"><img id="45" src="/images/a_46.gif"/></th>
+    <th id="box_3_7"><img id="46" src="/images/a_47.gif"/></th>
+    <th id="box_3_8"><img id="47" src="/images/a_48.gif"/></th>
+    <th id="box_3_9"><img id="48" src="/images/a_49.gif"/></th>
+    <th id="box_3_10"><img id="49" src="/images/a_50.gif"/></th>
+    <th id="box_3_11"><img id="50" src="/images/a_51.gif"/></th>
+    <th id="box_3_12"><img id="51" src="/images/a_52.gif"/></th>
+    <th id="box_3_13"><img id="52" src="/images/a_53.gif"/></th>
+    <th id="box_3_14"><img id="53" src="/images/a_54.gif"/></th>
+    <th id="box_3_15"><img id="54" src="/images/a_55.gif"/></th>
+    <th id="box_3_16"><img id="55" src="/images/a_56.gif"/></th>
+    <th id="box_3_17"><img id="56" src="/images/a_57.gif"/></th>
+    <th id="box_3_18"><img id="57" src="/images/a_58.gif"/></th>
+    <th id="box_3_19"><img id="58" src="/images/a_59.gif"/></th>
+    <th id="box_3_20"><img id="59" src="/images/a_60.gif"/></th>
+  </tr>
+  <tr > 
+    <th id="box_4_1" height = "0" width = "0"><img id="60" src="/images/a_61.gif" /></th>
+    <th id="box_4_2" height = "0" width = "0"><img id="61" src="/images/a_62.gif"/></th>
+    <th id="box_4_3" height = "0" width = "0"><img id="62" src="/images/a_63.gif"/></th>
+    <th id="box_4_4" height = "0" width = "0"><img id="63" src="/images/a_64.gif"/></th>
+    <th id="box_4_5" height = "0" width = "0"><img id="64" src="/images/a_65.gif"/></th>
+    <th id="box_4_6" height = "0" width = "0"><img id="65" src="/images/a_66.gif"/></th>
+    <th id="box_4_7"><img id="66" src="/images/a_67.gif"/></th>
+    <th id="box_4_8"><img id="67" src="/images/a_68.gif"/></th>
+    <th id="box_4_9"><img id="68" src="/images/a_69.gif"/></th>
+    <th id="box_4_10"><img id="69" src="/images/a_70.gif"/></th>
+    <th id="box_4_11" height = "0" width = "0"><img id="70" src="/images/a_71.gif" /></th>
+    <th id="box_4_12" height = "0" width = "0"><img id="71" src="/images/a_72.gif"/></th>
+    <th id="box_4_13" height = "0" width = "0"><img id="72" src="/images/a_73.gif"/></th>
+    <th id="box_4_14" height = "0" width = "0"><img id="73" src="/images/a_74.gif"/></th>
+    <th id="box_4_15" height = "0" width = "0"><img id="74" src="/images/a_75.gif"/></th>
+    <th id="box_4_16" height = "0" width = "0"><img id="75" src="/images/a_76.gif"/></th>
+    <th id="box_4_17"><img id="76" src="/images/a_77.gif"/></th>
+    <th id="box_4_18"><img id="77" src="/images/a_78.gif"/></th>
+    <th id="box_4_19"><img id="78" src="/images/a_79.gif"/></th>
+    <th id="box_4_20"><img id="79" src="/images/a_80.gif"/></th>
+  </tr>
+  <tr > 
+    <th id="box_5_1" height = "0" width = "0"><img id="80" src="/images/a_81.gif" /></th>
+    <th id="box_5_2" height = "0" width = "0"><img id="81" src="/images/a_82.gif"/></th>
+    <th id="box_5_3" height = "0" width = "0"><img id="82" src="/images/a_83.gif"/></th>
+    <th id="box_5_4" height = "0" width = "0"><img id="83" src="/images/a_84.gif"/></th>
+    <th id="box_5_5" height = "0" width = "0"><img id="84" src="/images/a_85.gif"/></th>
+    <th id="box_5_6" height = "0" width = "0"><img id="85" src="/images/a_86.gif"/></th>
+    <th id="box_5_7"><img id="86" src="/images/a_87.gif"/></th>
+    <th id="box_5_8"><img id="87" src="/images/a_88.gif"/></th>
+    <th id="box_5_9"><img id="88" src="/images/a_89.gif"/></th>
+    <th id="box_5_10"><img id="89" src="/images/a_90.gif"/></th>
+    <th id="box_5_11" height = "0" width = "0"><img id="90" src="/images/a_91.gif" /></th>
+    <th id="box_5_12" height = "0" width = "0"><img id="91" src="/images/a_92.gif"/></th>
+    <th id="box_5_13" height = "0" width = "0"><img id="92" src="/images/a_93.gif"/></th>
+    <th id="box_5_14" height = "0" width = "0"><img id="93" src="/images/a_94.gif"/></th>
+    <th id="box_5_15" height = "0" width = "0"><img id="94" src="/images/a_95.gif"/></th>
+    <th id="box_5_16" height = "0" width = "0"><img id="95" src="/images/a_96.gif"/></th>
+    <th id="box_5_17"><img id="96" src="/images/a_97.gif"/></th>
+    <th id="box_5_18"><img id="97" src="/images/a_98.gif"/></th>
+    <th id="box_5_19"><img id="98" src="/images/a_99.gif"/></th>
+    <th id="box_5_20"><img id="99" src="/images/a_100.gif"/></th>
+  </tr>
+  <tr>
+  <th id="box_6_1" ><img id="100" src="/images/a_101.gif" style="display:block;" "max-width: 0.1%; height: 0,1;"/></th> 
+    <th id="box_6_2" ><img id="101" src="/images/a_102.gif" style="display:block;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_6_3" ><img id="102" src="/images/a_103.gif" style="display:block;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_6_4" ><img id="103" src="/images/a_104.gif" style="vertical-align: bottom;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_6_5" ><img id="104" src="/images/a_105.gif" style="vertical-align: bottom;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_6_6" ><img id="105" src="/images/a_106.gif" style="vertical-align: bottom;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_6_7"><img id="106" src="/images/a_107.gif"/></th>
+    <th id="box_6_8"><img id="107" src="/images/a_108.gif"/></th>
+    <th id="box_6_9"><img id="108" src="/images/a_109.gif"/></th>
+    <th id="box_6_10"><img id="109" src="/images/a_110.gif"/></th>
+    <th id="box_6_11"><img id="110" src="/images/a_111.gif"/></th>
+    <th id="box_6_12"><img id="111" src="/images/a_112.gif"/></th>
+    <th id="box_6_13"><img id="112" src="/images/a_113.gif"/></th>
+    <th id="box_6_14"><img id="113" src="/images/a_114.gif"/></th>
+    <th id="box_6_15"><img id="114" src="/images/a_115.gif"/></th>
+    <th id="box_6_16"><img id="115" src="/images/a_116.gif"/></th>
+    <th id="box_6_17"><img id="116" src="/images/a_117.gif"/></th>
+    <th id="box_6_18"><img id="117" src="/images/a_118.gif"/></th>
+    <th id="box_6_19"><img id="118" src="/images/a_119.gif"/></th>
+    <th id="box_6_20"><img id="119" src="/images/a_120.gif"/></th>
+    </tr>
+   <tr >
+    <th id="box_7_1" height = "0" width = "0"><img id="120" src="/images/a_121.gif" /></th>
+    <th id="box_7_2" height = "0" width = "0"><img id="121" src="/images/a_122.gif"/></th>
+    <th id="box_7_3" height = "0" width = "0"><img id="122" src="/images/a_123.gif"/></th>
+    <th id="box_7_4" height = "0" width = "0"><img id="123" src="/images/a_124.gif"/></th>
+    <th id="box_7_5" height = "0" width = "0"><img id="124" src="/images/a_125.gif"/></th>
+    <th id="box_7_6" height = "0" width = "0"><img id="125" src="/images/a_126.gif"/></th>
+    <th id="box_7_7"><img id="126" src="/images/a_127.gif"/></th>
+    <th id="box_7_8"><img id="127" src="/images/a_128.gif"/></th>
+    <th id="box_7_9"><img id="128" src="/images/a_129.gif"/></th>
+    <th id="box_7_10"><img id="129" src="/images/a_130.gif"/></th>
+    <th id="box_7_11"><img id="130" src="/images/a_131.gif"/></th>
+    <th id="box_7_12"><img id="131" src="/images/a_132.gif"/></th>
+    <th id="box_7_13"><img id="132" src="/images/a_133.gif"/></th>
+    <th id="box_7_14"><img id="133" src="/images/a_134.gif"/></th>
+    <th id="box_7_15"><img id="134" src="/images/a_135.gif"/></th>
+    <th id="box_7_16"><img id="135" src="/images/a_136.gif"/></th>
+    <th id="box_7_17"><img id="136" src="/images/a_137.gif"/></th>
+    <th id="box_7_18"><img id="137" src="/images/a_138.gif"/></th>
+    <th id="box_7_19"><img id="138" src="/images/a_139.gif"/></th>
+    <th id="box_7_20"><img id="139" src="/images/a_140.gif"/></th>
+  </tr> 
+
+ 
+</table>
+
+<div style="position: absolute;">
+
+<!-- <div style="position: relative; top: 120px; left: 400px;"><img src="/My.png"></img> -->
+
+</div>
+
+</div>
+
+
+
+
+
+<script type="text/javascript">
+   
+//얘네들은 deletion에만 관여하는애들
+var list_of_images = [];
+var selected_image_ids = {};
+var image_indices = [];
+var new_list = [];
+
+//Global 상태
+var removal_on = 0; // 삭제 활성화
+var addition_on = 0; // 더하기 활성화
+
+//Addition에 관여하는애.
+var row_num;
+var column_num;
+var addition_current_index;
+var static_empty_file_location = "/images/empty.gif"; //이게 깨지는 이유는 ???????
+
+  for (i = 0; i < $("th").length; i++) {
+    list_of_images.push($("th")[i].firstChild.src)
+   
+  }
+  
+  console.log("처음 list_of_images: " + list_of_images);
+
+  $("#prepareremovalButton").click(function(){ //빨 -> 파는 되는데 다시 빨강이안돼요
+    // selected_image_ids = {};
+    // image_indices = [];
+    removal_on = 1;
+    addition_on = 0;
+    addition_current_index = -1;
+    selected_image_ids = {};
+    $("th").css("border","1px solid black");
+    console.log("red square")
+  });
+
+  $("#prepareadditionButton").click(function(){
+      addition_current_index = -1;
+      removal_on = 0;
+      addition_on = 1;
+      selected_image_ids = {};
+      console.log("blue square")
+      $("th").css("border","1px solid black");
+  });
+  
+  $("th").click(function(){
+    if(removal_on==1){
+      if(selected_image_ids[$(this).attr('id')]){
+        //1일겨우
+        selected_image_ids[$(this).attr('id')] = 0  
+        $(this).css("border","1px solid black");
+        
+      }else{
+        //새로운 경우나 취소된경우 
+        selected_image_ids[$(this).attr('id')] = 1;
+        $(this).css("border","5px solid red");
+      }
+      console.log($(this).attr('id') + "를 선택하셨습니다.")
+    }
+
+    if(addition_on==1){
+     
+      
+      var placeholder = $(this).attr('id').split("_");
+      row_num = placeholder[1];
+      column_num = placeholder[2];
+      addition_current_index = (parseInt(row_num)-1)*20 + parseInt(column_num) -1; //이게 img id랑 같음
+      
+      
+
+      console.log('row_num: ' + row_num + " col_num: " + column_num);
+      
+      $("th").css("border","1px solid black");
+      $(this).css("border","5px solid blue"); 
+      
+      console.log("box id: " + $(this).attr('id') + " is selected.")
+    }
+      
+  });
+      
+      
+     $("#removeButton").click(function(){
+        /*
+          select_images dict 보고, 
+          selected_images = {
+            box_1_1:1,
+            box_1_2:0 
+          }
+          key:value라고 했을때 value가 1인애들만 list_of_images에서 제거.
+        // 투명도, 애초에 테이블 길게만들어서 드래그했을때 다음?으로 가도록
+        */
+
+
+        // console.log("버튼을 클릭했습니다.")
+        // console.log("selected_image_ids: "+ selected_image_ids);
+        var list_of_keys = Object.keys(selected_image_ids);
+        //console.log("list_of_keys: " + list_of_keys)
+        // ["box_1_1", "box_1_2"]
+        for (j = 0; j < list_of_keys.length; j++) {
+          // "box_1_1"....
+          if(selected_image_ids[list_of_keys[j]]==1){ //이거 맨 뒤에 닫히는 거 맞나?
+            var id_selector = "#" + list_of_keys[j]
+            //console.log("id_selector: " + id_selector)
+            
+            //console.log(j +" 번째 인덱스의 이미지 패스는" + $(id_selector)[0].firstChild.src) 
+            // $(id_selector).firstChild.src =="/4.png"
+            new_list = []
+            var count= 0;
+            for(k = 0; k < list_of_images.length; k++){
+              if($(id_selector)[0].firstChild.src !=list_of_images[k]){
+                //console.log("비교를 시작합니다." + "첫번째 값: " + $(id_selector)[0].firstChild.src )
+                //console.log("두번째 값: "+list_of_images[k])
+                new_list.push(list_of_images[k]);
+              }
+              else{
+                count ++;
+              }
+            }
+
+            for(m = 0; m < count; m++){
+              new_list.push(static_empty_file_location);
+            }
+            list_of_images=new_list
+            
+          }   
+        }
+
+        console.log("revised list: " +  list_of_images)
+        fill_in_the_box(list_of_images);
+        addition_on = 0;
+        removal_on = 0;
+        $("th").css("border","1px solid black");
+      
+      }); //remove 끝
+
+     $("#addButton").click(function(){
+        if(addition_current_index>=0){
+          list_of_images.splice(addition_current_index, 0, static_empty_file_location); //여기 이미지 아이디에 해당하는 곳에 빈캄이미지 넣음..
+          list_of_images.pop();  
+          
+          fill_in_the_box(list_of_images);
+          addition_on = 0;
+          removal_on = 0;
+          $("th").css("border","1px solid black");
+        }
+        else{
+          alert("밀 박스를 입력하세요");
+        }
+        
+     });
+          /*선택을 하면 
+          예)
+          selected_images = {
+            box_1_1:1,
+            box_1_2:0
+          }
+
+          이렇게 나온다. 여기서 키값으로 어떤 박스가 선택되었는지 알고
+          이 empty_space_image_path로 채운다. c://DOCUMENTS/......./empty.jpg
+
+
+          var empty_space_image_path = "[REPLACE] 여기에, 빈칸이미지의 경로로 대체하여 쓰세요 "
+          맨밑에 
+          
+          list_of_images를 잘 작성하는게 중요하고, 그리고, 9개가 넘는지를 확인해야한다.
+          
+          [Psuedo Code]
+          list_of_keys = Object.keys(selected_images)
+          if list_of_keys.length + list_of_images.length > 9:
+            alert("너무 많은 element를 선택했습니다.")
+          else: 
+            list_of_images를 제대로 제어하여 update하는 로직
+            
+          fill_in_the_box(list_of_images)
+
+          */
+      //})
+
+      function fill_in_the_box(list_of_image){
+        /*
+        인덱스:    0      1      2
+        리스트: [1.png, 2.png, 7.png.......] 칸개수만큼 default
+        
+        
+        */
+
+
+        for (i = 0; i < list_of_images.length; i++) {
+          var string_buffer = "#" + i; 
+          console.log(i+"번째 칸에 " + list_of_images[i]);
+          $(string_buffer).attr('src', list_of_images[i]);
+          // $(string_buffer).attr('width', 700); 
+          
+        }
+      }
+
+      /*
+        이미지 밀리는 기능을 하기 위해 유지하고있는 데이터가, list_of_images고, 이걸로 
+        7개 ["/1.png", "/4.png", "/5.png", "/6.png", "/7.png", "/8.png", "/9.png"]
+        box_1_1 —> 0번째 인덱스를 넣고. 
+        box_1_2 —> 1번쨰 인덱스를 넣고,
+        .
+        .
+        .
+        .
+        .
+        box_3_1 —> 6번째 인덱스를 넣는다. 
+      */
+  
+   
+  </script>
+
+
+
+
+</body>
+
+
+
+
+</html>

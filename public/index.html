@@ -1,8 +1,9 @@
 <html>
 
 <head>
-  <title>dd</title>  
+
   <meta charset="EUC-KR">
+  <title> fixyournote.com </title>
   <!-- <link rel="stylesheet" href="/stylesheets/style.css"> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <style>
@@ -18,13 +19,17 @@
       border: 1px solid black;
     }
 
-
-
- 
-
-
     </style>
-  
+          <style>
+
+            .box1 {
+                border-color: powderblue;
+                border-width: 20px;
+                border-style: solid;
+                padding: 50px 50px;
+                margin: 100px 100px;                
+            }
+        </style>
 
  
 </head>
@@ -40,7 +45,19 @@
 
 <body>
 
-<p><button id="backgroundinput" >input background img</button></p> 
+<style>
+
+    #para { color: teal; text-decoration: }
+    #para1 { color: red; text-decoration: }
+    #para2 { color: lime; text-decoration: }
+
+</style>
+
+
+
+<div class="box1"><p id="para1">note!! </p> <p id="para">add (/ + row number) to our URL in order to synchronize your sliced note and our table (table column is fixed to 20)</p>
+
+<p id="para">ex) if your note is sliced by 7*20, go to http://fixyournote.com/7 </p></div>
 <p><button id="prepareremovalButton" >click before selecting squares for deletion</button></p> 
 <p><button id="removeButton" >remove red square</button></p>
 <p><button id="prepareadditionButton" >click before selecting adding spot</button></p>

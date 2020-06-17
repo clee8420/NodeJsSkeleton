@@ -1,0 +1,726 @@
+<html>
+
+<head>
+  <title>dd</title>  
+  <meta charset="EUC-KR">
+  <!-- <link rel="stylesheet" href="/stylesheets/style.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <style>
+    table {
+      border-spacing: 0;
+    
+      border: 1px solid black;
+    }
+    
+    th, td {
+      text-align: left;
+    
+      border: 1px solid black;
+    }
+
+
+
+ 
+
+
+    </style>
+  
+
+ 
+</head>
+
+<script type="text/javascript">
+  function change()
+  {
+    $(this).css("background-color", "red");
+  }
+  
+  
+</script> 
+
+<body>
+
+<p><button id="backgroundinput" >input background img</button></p> 
+<p><button id="prepareremovalButton" >click before selecting squares for deletion</button></p> 
+<p><button id="removeButton" >remove red square</button></p>
+<p><button id="prepareadditionButton" >click before selecting adding spot</button></p>
+<p><button id="addButton" >add square</button></p> 
+
+<table id="myTable" width = "1" height= "1" table celllspacing = 0 cellpadding = 0 >
+  <tr > 
+    <th id="box_1_1" ><img id="0" src="/images/a_01.gif" style="display:block;" "max-width: 0.1%; height: 0,1;"/></th> 
+    <th id="box_1_2" ><img id="1" src="/images/a_02.gif" style="display:block;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_1_3" ><img id="2" src="/images/a_03.gif" style="display:block;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_1_4" ><img id="3" src="/images/a_04.gif" style="vertical-align: bottom;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_1_5" ><img id="4" src="/images/a_05.gif" style="vertical-align: bottom;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_1_6" ><img id="5" src="/images/a_06.gif" style="vertical-align: bottom;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_1_7"><img id="6" src="/images/a_07.gif"/></th>
+    <th id="box_1_8"><img id="7" src="/images/a_08.gif"/></th>
+    <th id="box_1_9"><img id="8" src="/images/a_09.gif"/></th>
+    <th id="box_1_10"><img id="9" src="/images/a_10.gif"/></th>
+    <th id="box_1_11"><img id="10" src="/images/a_11.gif"/></th>
+    <th id="box_1_12"><img id="11" src="/images/a_12.gif"/></th>
+    <th id="box_1_13"><img id="12" src="/images/a_13.gif"/></th>
+    <th id="box_1_14"><img id="13" src="/images/a_14.gif"/></th>
+    <th id="box_1_15"><img id="14" src="/images/a_15.gif"/></th>
+    <th id="box_1_16"><img id="15" src="/images/a_16.gif"/></th>
+    <th id="box_1_17"><img id="16" src="/images/a_17.gif"/></th>
+    <th id="box_1_18"><img id="17" src="/images/a_18.gif"/></th>
+    <th id="box_1_19"><img id="18" src="/images/a_19.gif"/></th>
+    <th id="box_1_20"><img id="19" src="/images/a_20.gif"/></th>
+
+  </tr>
+  <tr >
+    <th id="box_2_1" height = "0" width = "0"><img id="20" src="/images/a_21.gif" /></th>
+    <th id="box_2_2" height = "0" width = "0"><img id="21" src="/images/a_22.gif"/></th>
+    <th id="box_2_3" height = "0" width = "0"><img id="22" src="/images/a_23.gif"/></th>
+    <th id="box_2_4" height = "0" width = "0"><img id="23" src="/images/a_24.gif"/></th>
+    <th id="box_2_5" height = "0" width = "0"><img id="24" src="/images/a_25.gif"/></th>
+    <th id="box_2_6" height = "0" width = "0"><img id="25" src="/images/a_26.gif"/></th>
+    <th id="box_2_7"><img id="26" src="/images/a_27.gif"/></th>
+    <th id="box_2_8"><img id="27" src="/images/a_28.gif"/></th>
+    <th id="box_2_9"><img id="28" src="/images/a_29.gif"/></th>
+    <th id="box_2_10"><img id="29" src="/images/a_30.gif"/></th>
+    <th id="box_2_11"><img id="30" src="/images/a_31.gif"/></th>
+    <th id="box_2_12"><img id="31" src="/images/a_32.gif"/></th>
+    <th id="box_2_13"><img id="32" src="/images/a_33.gif"/></th>
+    <th id="box_2_14"><img id="33" src="/images/a_34.gif"/></th>
+    <th id="box_2_15"><img id="34" src="/images/a_35.gif"/></th>
+    <th id="box_2_16"><img id="35" src="/images/a_36.gif"/></th>
+    <th id="box_2_17"><img id="36" src="/images/a_37.gif"/></th>
+    <th id="box_2_18"><img id="37" src="/images/a_38.gif"/></th>
+    <th id="box_2_19"><img id="38" src="/images/a_39.gif"/></th>
+    <th id="box_2_20"><img id="39" src="/images/a_40.gif"/></th>
+  </tr>
+  <tr >
+    <th id="box_3_1" height = "0" width = "0"><img id="40" src="/images/a_41.gif" /></th>
+    <th id="box_3_2" height = "0" width = "0"><img id="41" src="/images/a_42.gif"/></th>
+    <th id="box_3_3" height = "0" width = "0"><img id="42" src="/images/a_43.gif"/></th>
+    <th id="box_3_4" height = "0" width = "0"><img id="43" src="/images/a_44.gif"/></th>
+    <th id="box_3_5" height = "0" width = "0"><img id="44" src="/images/a_45.gif"/></th>
+    <th id="box_3_6" height = "0" width = "0"><img id="45" src="/images/a_46.gif"/></th>
+    <th id="box_3_7"><img id="46" src="/images/a_47.gif"/></th>
+    <th id="box_3_8"><img id="47" src="/images/a_48.gif"/></th>
+    <th id="box_3_9"><img id="48" src="/images/a_49.gif"/></th>
+    <th id="box_3_10"><img id="49" src="/images/a_50.gif"/></th>
+    <th id="box_3_11"><img id="50" src="/images/a_51.gif"/></th>
+    <th id="box_3_12"><img id="51" src="/images/a_52.gif"/></th>
+    <th id="box_3_13"><img id="52" src="/images/a_53.gif"/></th>
+    <th id="box_3_14"><img id="53" src="/images/a_54.gif"/></th>
+    <th id="box_3_15"><img id="54" src="/images/a_55.gif"/></th>
+    <th id="box_3_16"><img id="55" src="/images/a_56.gif"/></th>
+    <th id="box_3_17"><img id="56" src="/images/a_57.gif"/></th>
+    <th id="box_3_18"><img id="57" src="/images/a_58.gif"/></th>
+    <th id="box_3_19"><img id="58" src="/images/a_59.gif"/></th>
+    <th id="box_3_20"><img id="59" src="/images/a_60.gif"/></th>
+  </tr>
+  <tr > 
+    <th id="box_4_1" height = "0" width = "0"><img id="60" src="/images/a_61.gif" /></th>
+    <th id="box_4_2" height = "0" width = "0"><img id="61" src="/images/a_62.gif"/></th>
+    <th id="box_4_3" height = "0" width = "0"><img id="62" src="/images/a_63.gif"/></th>
+    <th id="box_4_4" height = "0" width = "0"><img id="63" src="/images/a_64.gif"/></th>
+    <th id="box_4_5" height = "0" width = "0"><img id="64" src="/images/a_65.gif"/></th>
+    <th id="box_4_6" height = "0" width = "0"><img id="65" src="/images/a_66.gif"/></th>
+    <th id="box_4_7"><img id="66" src="/images/a_67.gif"/></th>
+    <th id="box_4_8"><img id="67" src="/images/a_68.gif"/></th>
+    <th id="box_4_9"><img id="68" src="/images/a_69.gif"/></th>
+    <th id="box_4_10"><img id="69" src="/images/a_70.gif"/></th>
+    <th id="box_4_11" height = "0" width = "0"><img id="70" src="/images/a_71.gif" /></th>
+    <th id="box_4_12" height = "0" width = "0"><img id="71" src="/images/a_72.gif"/></th>
+    <th id="box_4_13" height = "0" width = "0"><img id="72" src="/images/a_73.gif"/></th>
+    <th id="box_4_14" height = "0" width = "0"><img id="73" src="/images/a_74.gif"/></th>
+    <th id="box_4_15" height = "0" width = "0"><img id="74" src="/images/a_75.gif"/></th>
+    <th id="box_4_16" height = "0" width = "0"><img id="75" src="/images/a_76.gif"/></th>
+    <th id="box_4_17"><img id="76" src="/images/a_77.gif"/></th>
+    <th id="box_4_18"><img id="77" src="/images/a_78.gif"/></th>
+    <th id="box_4_19"><img id="78" src="/images/a_79.gif"/></th>
+    <th id="box_4_20"><img id="79" src="/images/a_80.gif"/></th>
+  </tr>
+  <tr > 
+    <th id="box_5_1" height = "0" width = "0"><img id="80" src="/images/a_81.gif" /></th>
+    <th id="box_5_2" height = "0" width = "0"><img id="81" src="/images/a_82.gif"/></th>
+    <th id="box_5_3" height = "0" width = "0"><img id="82" src="/images/a_83.gif"/></th>
+    <th id="box_5_4" height = "0" width = "0"><img id="83" src="/images/a_84.gif"/></th>
+    <th id="box_5_5" height = "0" width = "0"><img id="84" src="/images/a_85.gif"/></th>
+    <th id="box_5_6" height = "0" width = "0"><img id="85" src="/images/a_86.gif"/></th>
+    <th id="box_5_7"><img id="86" src="/images/a_87.gif"/></th>
+    <th id="box_5_8"><img id="87" src="/images/a_88.gif"/></th>
+    <th id="box_5_9"><img id="88" src="/images/a_89.gif"/></th>
+    <th id="box_5_10"><img id="89" src="/images/a_90.gif"/></th>
+    <th id="box_5_11" height = "0" width = "0"><img id="90" src="/images/a_91.gif" /></th>
+    <th id="box_5_12" height = "0" width = "0"><img id="91" src="/images/a_92.gif"/></th>
+    <th id="box_5_13" height = "0" width = "0"><img id="92" src="/images/a_93.gif"/></th>
+    <th id="box_5_14" height = "0" width = "0"><img id="93" src="/images/a_94.gif"/></th>
+    <th id="box_5_15" height = "0" width = "0"><img id="94" src="/images/a_95.gif"/></th>
+    <th id="box_5_16" height = "0" width = "0"><img id="95" src="/images/a_96.gif"/></th>
+    <th id="box_5_17"><img id="96" src="/images/a_97.gif"/></th>
+    <th id="box_5_18"><img id="97" src="/images/a_98.gif"/></th>
+    <th id="box_5_19"><img id="98" src="/images/a_99.gif"/></th>
+    <th id="box_5_20"><img id="99" src="/images/a_100.gif"/></th>
+  </tr>
+  <tr>
+  <th id="box_6_1" ><img id="100" src="/images/a_101.gif" style="display:block;" "max-width: 0.1%; height: 0,1;"/></th> 
+    <th id="box_6_2" ><img id="101" src="/images/a_102.gif" style="display:block;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_6_3" ><img id="102" src="/images/a_103.gif" style="display:block;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_6_4" ><img id="103" src="/images/a_104.gif" style="vertical-align: bottom;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_6_5" ><img id="104" src="/images/a_105.gif" style="vertical-align: bottom;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_6_6" ><img id="105" src="/images/a_106.gif" style="vertical-align: bottom;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_6_7"><img id="106" src="/images/a_107.gif"/></th>
+    <th id="box_6_8"><img id="107" src="/images/a_108.gif"/></th>
+    <th id="box_6_9"><img id="108" src="/images/a_109.gif"/></th>
+    <th id="box_6_10"><img id="109" src="/images/a_110.gif"/></th>
+    <th id="box_6_11"><img id="110" src="/images/a_111.gif"/></th>
+    <th id="box_6_12"><img id="111" src="/images/a_112.gif"/></th>
+    <th id="box_6_13"><img id="112" src="/images/a_113.gif"/></th>
+    <th id="box_6_14"><img id="113" src="/images/a_114.gif"/></th>
+    <th id="box_6_15"><img id="114" src="/images/a_115.gif"/></th>
+    <th id="box_6_16"><img id="115" src="/images/a_116.gif"/></th>
+    <th id="box_6_17"><img id="116" src="/images/a_117.gif"/></th>
+    <th id="box_6_18"><img id="117" src="/images/a_118.gif"/></th>
+    <th id="box_6_19"><img id="118" src="/images/a_119.gif"/></th>
+    <th id="box_6_20"><img id="119" src="/images/a_120.gif"/></th>
+    </tr>
+   <tr >
+    <th id="box_7_1" height = "0" width = "0"><img id="120" src="/images/a_121.gif" /></th>
+    <th id="box_7_2" height = "0" width = "0"><img id="121" src="/images/a_122.gif"/></th>
+    <th id="box_7_3" height = "0" width = "0"><img id="122" src="/images/a_123.gif"/></th>
+    <th id="box_7_4" height = "0" width = "0"><img id="123" src="/images/a_124.gif"/></th>
+    <th id="box_7_5" height = "0" width = "0"><img id="124" src="/images/a_125.gif"/></th>
+    <th id="box_7_6" height = "0" width = "0"><img id="125" src="/images/a_126.gif"/></th>
+    <th id="box_7_7"><img id="126" src="/images/a_127.gif"/></th>
+    <th id="box_7_8"><img id="127" src="/images/a_128.gif"/></th>
+    <th id="box_7_9"><img id="128" src="/images/a_129.gif"/></th>
+    <th id="box_7_10"><img id="129" src="/images/a_130.gif"/></th>
+    <th id="box_7_11"><img id="130" src="/images/a_131.gif"/></th>
+    <th id="box_7_12"><img id="131" src="/images/a_132.gif"/></th>
+    <th id="box_7_13"><img id="132" src="/images/a_133.gif"/></th>
+    <th id="box_7_14"><img id="133" src="/images/a_134.gif"/></th>
+    <th id="box_7_15"><img id="134" src="/images/a_135.gif"/></th>
+    <th id="box_7_16"><img id="135" src="/images/a_136.gif"/></th>
+    <th id="box_7_17"><img id="136" src="/images/a_137.gif"/></th>
+    <th id="box_7_18"><img id="137" src="/images/a_138.gif"/></th>
+    <th id="box_7_19"><img id="138" src="/images/a_139.gif"/></th>
+    <th id="box_7_20"><img id="139" src="/images/a_140.gif"/></th>
+  </tr> 
+<tr >
+    <th id="box_8_1" height = "0" width = "0"><img id="140" src="/images/a_141.gif" /></th>
+    <th id="box_8_2" height = "0" width = "0"><img id="141" src="/images/a_142.gif"/></th>
+    <th id="box_8_3" height = "0" width = "0"><img id="142" src="/images/a_143.gif"/></th>
+    <th id="box_8_4" height = "0" width = "0"><img id="143" src="/images/a_144.gif"/></th>
+    <th id="box_8_5" height = "0" width = "0"><img id="144" src="/images/a_145.gif"/></th>
+    <th id="box_8_6" height = "0" width = "0"><img id="145" src="/images/a_146.gif"/></th>
+    <th id="box_8_7"><img id="146" src="/images/a_147.gif"/></th>
+    <th id="box_8_8"><img id="147" src="/images/a_148.gif"/></th>
+    <th id="box_8_9"><img id="148" src="/images/a_149.gif"/></th>
+    <th id="box_8_10"><img id="149" src="/images/a_150.gif"/></th>
+    <th id="box_8_11"><img id="150" src="/images/a_151.gif"/></th>
+    <th id="box_8_12"><img id="151" src="/images/a_152.gif"/></th>
+    <th id="box_8_13"><img id="152" src="/images/a_153.gif"/></th>
+    <th id="box_8_14"><img id="153" src="/images/a_154.gif"/></th>
+    <th id="box_8_15"><img id="154" src="/images/a_155.gif"/></th>
+    <th id="box_8_16"><img id="155" src="/images/a_156.gif"/></th>
+    <th id="box_8_17"><img id="156" src="/images/a_157.gif"/></th>
+    <th id="box_8_18"><img id="157" src="/images/a_158.gif"/></th>
+    <th id="box_8_19"><img id="158" src="/images/a_159.gif"/></th>
+    <th id="box_8_20"><img id="159" src="/images/a_160.gif"/></th>
+  </tr>
+    <tr > 
+    <th id="box_9_1" height = "0" width = "0"><img id="160" src="/images/a_161.gif" /></th>
+    <th id="box_9_2" height = "0" width = "0"><img id="161" src="/images/a_162.gif"/></th>
+    <th id="box_9_3" height = "0" width = "0"><img id="162" src="/images/a_163.gif"/></th>
+    <th id="box_9_4" height = "0" width = "0"><img id="163" src="/images/a_164.gif"/></th>
+    <th id="box_9_5" height = "0" width = "0"><img id="164" src="/images/a_165.gif"/></th>
+    <th id="box_9_6" height = "0" width = "0"><img id="165" src="/images/a_166.gif"/></th>
+    <th id="box_9_7"><img id="166" src="/images/a_167.gif"/></th>
+    <th id="box_9_8"><img id="167" src="/images/a_168.gif"/></th>
+    <th id="box_9_9"><img id="168" src="/images/a_169.gif"/></th>
+    <th id="box_9_10"><img id="169" src="/images/a_170.gif"/></th>
+    <th id="box_9_11" height = "0" width = "0"><img id="170" src="/images/a_171.gif" /></th>
+    <th id="box_9_12" height = "0" width = "0"><img id="171" src="/images/a_172.gif"/></th>
+    <th id="box_9_13" height = "0" width = "0"><img id="172" src="/images/a_173.gif"/></th>
+    <th id="box_9_14" height = "0" width = "0"><img id="173" src="/images/a_174.gif"/></th>
+    <th id="box_9_15" height = "0" width = "0"><img id="174" src="/images/a_175.gif"/></th>
+    <th id="box_9_16" height = "0" width = "0"><img id="175" src="/images/a_176.gif"/></th>
+    <th id="box_9_17"><img id="176" src="/images/a_177.gif"/></th>
+    <th id="box_9_18"><img id="177" src="/images/a_178.gif"/></th>
+    <th id="box_9_19"><img id="178" src="/images/a_179.gif"/></th>
+    <th id="box_9_20"><img id="179" src="/images/a_180.gif"/></th>
+  </tr>
+  <tr > 
+    <th id="box_10_1" height = "0" width = "0"><img id="180" src="/images/a_181.gif" /></th>
+    <th id="box_10_2" height = "0" width = "0"><img id="181" src="/images/a_182.gif"/></th>
+    <th id="box_10_3" height = "0" width = "0"><img id="182" src="/images/a_183.gif"/></th>
+    <th id="box_10_4" height = "0" width = "0"><img id="183" src="/images/a_184.gif"/></th>
+    <th id="box_10_5" height = "0" width = "0"><img id="184" src="/images/a_185.gif"/></th>
+    <th id="box_10_6" height = "0" width = "0"><img id="185" src="/images/a_186.gif"/></th>
+    <th id="box_10_7"><img id="186" src="/images/a_187.gif"/></th>
+    <th id="box_10_8"><img id="187" src="/images/a_188.gif"/></th>
+    <th id="box_10_9"><img id="188" src="/images/a_189.gif"/></th>
+    <th id="box_10_10"><img id="189" src="/images/a_190.gif"/></th>
+    <th id="box_10_11" height = "0" width = "0"><img id="190" src="/images/a_191.gif" /></th>
+    <th id="box_10_12" height = "0" width = "0"><img id="191" src="/images/a_192.gif"/></th>
+    <th id="box_10_13" height = "0" width = "0"><img id="192" src="/images/a_193.gif"/></th>
+    <th id="box_10_14" height = "0" width = "0"><img id="193" src="/images/a_194.gif"/></th>
+    <th id="box_10_15" height = "0" width = "0"><img id="194" src="/images/a_195.gif"/></th>
+    <th id="box_10_16" height = "0" width = "0"><img id="195" src="/images/a_196.gif"/></th>
+    <th id="box_10_17"><img id="196" src="/images/a_197.gif"/></th>
+    <th id="box_10_18"><img id="197" src="/images/a_198.gif"/></th>
+    <th id="box_10_19"><img id="198" src="/images/a_199.gif"/></th>
+    <th id="box_10_20"><img id="199" src="/images/a_200.gif"/></th>
+  </tr>
+  <tr > 
+    <th id="box_11_1" ><img id="200" src="/images/a_201.gif" style="display:block;" "max-width: 0.1%; height: 0,1;"/></th> 
+    <th id="box_11_2" ><img id="201" src="/images/a_202.gif" style="display:block;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_11_3" ><img id="202" src="/images/a_203.gif" style="display:block;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_11_4" ><img id="203" src="/images/a_204.gif" style="vertical-align: bottom;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_11_5" ><img id="204" src="/images/a_205.gif" style="vertical-align: bottom;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_11_6" ><img id="205" src="/images/a_206.gif" style="vertical-align: bottom;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_11_7"><img id="206" src="/images/a_207.gif"/></th>
+    <th id="box_11_8"><img id="207" src="/images/a_208.gif"/></th>
+    <th id="box_11_9"><img id="208" src="/images/a_209.gif"/></th>
+    <th id="box_11_10"><img id="209" src="/images/a_210.gif"/></th>
+    <th id="box_11_11"><img id="210" src="/images/a_211.gif"/></th>
+    <th id="box_11_12"><img id="211" src="/images/a_212.gif"/></th>
+    <th id="box_11_13"><img id="212" src="/images/a_213.gif"/></th>
+    <th id="box_11_14"><img id="213" src="/images/a_214.gif"/></th>
+    <th id="box_11_15"><img id="214" src="/images/a_215.gif"/></th>
+    <th id="box_11_16"><img id="215" src="/images/a_216.gif"/></th>
+    <th id="box_11_17"><img id="216" src="/images/a_217.gif"/></th>
+    <th id="box_11_18"><img id="217" src="/images/a_218.gif"/></th>
+    <th id="box_11_19"><img id="218" src="/images/a_219.gif"/></th>
+    <th id="box_11_20"><img id="219" src="/images/a_220.gif"/></th>
+
+  </tr>
+  <tr >
+    <th id="box_12_1" height = "0" width = "0"><img id="220" src="/images/a_221.gif" /></th>
+    <th id="box_12_2" height = "0" width = "0"><img id="221" src="/images/a_222.gif"/></th>
+    <th id="box_12_3" height = "0" width = "0"><img id="222" src="/images/a_223.gif"/></th>
+    <th id="box_12_4" height = "0" width = "0"><img id="223" src="/images/a_224.gif"/></th>
+    <th id="box_12_5" height = "0" width = "0"><img id="224" src="/images/a_225.gif"/></th>
+    <th id="box_12_6" height = "0" width = "0"><img id="225" src="/images/a_226.gif"/></th>
+    <th id="box_12_7"><img id="226" src="/images/a_227.gif"/></th>
+    <th id="box_12_8"><img id="227" src="/images/a_228.gif"/></th>
+    <th id="box_12_9"><img id="228" src="/images/a_229.gif"/></th>
+    <th id="box_12_10"><img id="229" src="/images/a_230.gif"/></th>
+    <th id="box_12_11"><img id="230" src="/images/a_231.gif"/></th>
+    <th id="box_12_12"><img id="231" src="/images/a_232.gif"/></th>
+    <th id="box_12_13"><img id="232" src="/images/a_233.gif"/></th>
+    <th id="box_12_14"><img id="233" src="/images/a_234.gif"/></th>
+    <th id="box_12_15"><img id="234" src="/images/a_235.gif"/></th>
+    <th id="box_12_16"><img id="235" src="/images/a_236.gif"/></th>
+    <th id="box_12_17"><img id="236" src="/images/a_237.gif"/></th>
+    <th id="box_12_18"><img id="237" src="/images/a_238.gif"/></th>
+    <th id="box_12_19"><img id="238" src="/images/a_239.gif"/></th>
+    <th id="box_12_20"><img id="239" src="/images/a_240.gif"/></th>
+  </tr>
+  <tr >
+    <th id="box_13_1" height = "0" width = "0"><img id="240" src="/images/a_241.gif" /></th>
+    <th id="box_13_2" height = "0" width = "0"><img id="241" src="/images/a_242.gif"/></th>
+    <th id="box_13_3" height = "0" width = "0"><img id="242" src="/images/a_243.gif"/></th>
+    <th id="box_13_4" height = "0" width = "0"><img id="243" src="/images/a_244.gif"/></th>
+    <th id="box_13_5" height = "0" width = "0"><img id="244" src="/images/a_245.gif"/></th>
+    <th id="box_13_6" height = "0" width = "0"><img id="245" src="/images/a_246.gif"/></th>
+    <th id="box_13_7"><img id="246" src="/images/a_247.gif"/></th>
+    <th id="box_13_8"><img id="247" src="/images/a_248.gif"/></th>
+    <th id="box_13_9"><img id="248" src="/images/a_249.gif"/></th>
+    <th id="box_13_10"><img id="249" src="/images/a_250.gif"/></th>
+    <th id="box_13_11"><img id="250" src="/images/a_251.gif"/></th>
+    <th id="box_13_12"><img id="251" src="/images/a_252.gif"/></th>
+    <th id="box_13_13"><img id="252" src="/images/a_253.gif"/></th>
+    <th id="box_13_14"><img id="253" src="/images/a_254.gif"/></th>
+    <th id="box_13_15"><img id="254" src="/images/a_255.gif"/></th>
+    <th id="box_13_16"><img id="255" src="/images/a_256.gif"/></th>
+    <th id="box_13_17"><img id="256" src="/images/a_257.gif"/></th>
+    <th id="box_13_18"><img id="257" src="/images/a_258.gif"/></th>
+    <th id="box_13_19"><img id="258" src="/images/a_259.gif"/></th>
+    <th id="box_13_20"><img id="259" src="/images/a_260.gif"/></th>
+  </tr>
+  <tr > 
+    <th id="box_14_1" height = "0" width = "0"><img id="260" src="/images/a_261.gif" /></th>
+    <th id="box_14_2" height = "0" width = "0"><img id="261" src="/images/a_262.gif"/></th>
+    <th id="box_14_3" height = "0" width = "0"><img id="262" src="/images/a_263.gif"/></th>
+    <th id="box_14_4" height = "0" width = "0"><img id="263" src="/images/a_264.gif"/></th>
+    <th id="box_14_5" height = "0" width = "0"><img id="264" src="/images/a_265.gif"/></th>
+    <th id="box_14_6" height = "0" width = "0"><img id="265" src="/images/a_266.gif"/></th>
+    <th id="box_14_7"><img id="266" src="/images/a_267.gif"/></th>
+    <th id="box_14_8"><img id="267" src="/images/a_268.gif"/></th>
+    <th id="box_14_9"><img id="268" src="/images/a_269.gif"/></th>
+    <th id="box_14_10"><img id="269" src="/images/a_270.gif"/></th>
+    <th id="box_14_11" height = "0" width = "0"><img id="270" src="/images/a_271.gif" /></th>
+    <th id="box_14_12" height = "0" width = "0"><img id="271" src="/images/a_272.gif"/></th>
+    <th id="box_14_13" height = "0" width = "0"><img id="272" src="/images/a_273.gif"/></th>
+    <th id="box_14_14" height = "0" width = "0"><img id="273" src="/images/a_274.gif"/></th>
+    <th id="box_14_15" height = "0" width = "0"><img id="274" src="/images/a_275.gif"/></th>
+    <th id="box_14_16" height = "0" width = "0"><img id="275" src="/images/a_276.gif"/></th>
+    <th id="box_14_17"><img id="276" src="/images/a_277.gif"/></th>
+    <th id="box_14_18"><img id="277" src="/images/a_278.gif"/></th>
+    <th id="box_14_19"><img id="278" src="/images/a_279.gif"/></th>
+    <th id="box_14_20"><img id="279" src="/images/a_280.gif"/></th>
+  </tr>
+  <tr > 
+    <th id="box_15_1" height = "0" width = "0"><img id="280" src="/images/a_281.gif" /></th>
+    <th id="box_15_2" height = "0" width = "0"><img id="281" src="/images/a_282.gif"/></th>
+    <th id="box_15_3" height = "0" width = "0"><img id="282" src="/images/a_283.gif"/></th>
+    <th id="box_15_4" height = "0" width = "0"><img id="283" src="/images/a_284.gif"/></th>
+    <th id="box_15_5" height = "0" width = "0"><img id="284" src="/images/a_285.gif"/></th>
+    <th id="box_15_6" height = "0" width = "0"><img id="285" src="/images/a_286.gif"/></th>
+    <th id="box_15_7"><img id="286" src="/images/a_287.gif"/></th>
+    <th id="box_15_8"><img id="287" src="/images/a_288.gif"/></th>
+    <th id="box_15_9"><img id="288" src="/images/a_289.gif"/></th>
+    <th id="box_15_10"><img id="289" src="/images/a_290.gif"/></th>
+    <th id="box_15_11" height = "0" width = "0"><img id="290" src="/images/a_291.gif" /></th>
+    <th id="box_15_12" height = "0" width = "0"><img id="291" src="/images/a_292.gif"/></th>
+    <th id="box_15_13" height = "0" width = "0"><img id="292" src="/images/a_293.gif"/></th>
+    <th id="box_15_14" height = "0" width = "0"><img id="293" src="/images/a_294.gif"/></th>
+    <th id="box_15_15" height = "0" width = "0"><img id="294" src="/images/a_295.gif"/></th>
+    <th id="box_15_16" height = "0" width = "0"><img id="295" src="/images/a_296.gif"/></th>
+    <th id="box_15_17"><img id="296" src="/images/a_297.gif"/></th>
+    <th id="box_15_18"><img id="297" src="/images/a_298.gif"/></th>
+    <th id="box_15_19"><img id="298" src="/images/a_299.gif"/></th>
+    <th id="box_15_20"><img id="299" src="/images/a_300.gif"/></th>
+  </tr>
+  <tr>
+  <th id="box_16_1" ><img id="300" src="/images/a_301.gif" style="display:block;" "max-width: 0.1%; height: 0,1;"/></th> 
+    <th id="box_16_2" ><img id="301" src="/images/a_302.gif" style="display:block;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_16_3" ><img id="302" src="/images/a_303.gif" style="display:block;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_16_4" ><img id="303" src="/images/a_304.gif" style="vertical-align: bottom;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_16_5" ><img id="304" src="/images/a_305.gif" style="vertical-align: bottom;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_16_6" ><img id="305" src="/images/a_306.gif" style="vertical-align: bottom;" "max-width: 100%; height: auto;"/></th>
+    <th id="box_16_7"><img id="306" src="/images/a_307.gif"/></th>
+    <th id="box_16_8"><img id="307" src="/images/a_308.gif"/></th>
+    <th id="box_16_9"><img id="308" src="/images/a_309.gif"/></th>
+    <th id="box_16_10"><img id="309" src="/images/a_310.gif"/></th>
+    <th id="box_16_11"><img id="310" src="/images/a_311.gif"/></th>
+    <th id="box_16_12"><img id="311" src="/images/a_312.gif"/></th>
+    <th id="box_16_13"><img id="312" src="/images/a_313.gif"/></th>
+    <th id="box_16_14"><img id="313" src="/images/a_314.gif"/></th>
+    <th id="box_16_15"><img id="314" src="/images/a_315.gif"/></th>
+    <th id="box_16_16"><img id="315" src="/images/a_316.gif"/></th>
+    <th id="box_16_17"><img id="316" src="/images/a_317.gif"/></th>
+    <th id="box_16_18"><img id="317" src="/images/a_318.gif"/></th>
+    <th id="box_16_19"><img id="318" src="/images/a_319.gif"/></th>
+    <th id="box_16_20"><img id="319" src="/images/a_320.gif"/></th>
+    </tr>
+   <tr >
+    <th id="box_17_1" height = "0" width = "0"><img id="320" src="/images/a_321.gif" /></th>
+    <th id="box_17_2" height = "0" width = "0"><img id="321" src="/images/a_322.gif"/></th>
+    <th id="box_17_3" height = "0" width = "0"><img id="322" src="/images/a_323.gif"/></th>
+    <th id="box_17_4" height = "0" width = "0"><img id="323" src="/images/a_324.gif"/></th>
+    <th id="box_17_5" height = "0" width = "0"><img id="324" src="/images/a_325.gif"/></th>
+    <th id="box_17_6" height = "0" width = "0"><img id="325" src="/images/a_326.gif"/></th>
+    <th id="box_17_7"><img id="326" src="/images/a_327.gif"/></th>
+    <th id="box_17_8"><img id="327" src="/images/a_328.gif"/></th>
+    <th id="box_17_9"><img id="328" src="/images/a_329.gif"/></th>
+    <th id="box_17_10"><img id="329" src="/images/a_330.gif"/></th>
+    <th id="box_17_11"><img id="330" src="/images/a_331.gif"/></th>
+    <th id="box_17_12"><img id="331" src="/images/a_332.gif"/></th>
+    <th id="box_17_13"><img id="332" src="/images/a_333.gif"/></th>
+    <th id="box_17_14"><img id="333" src="/images/a_334.gif"/></th>
+    <th id="box_17_15"><img id="334" src="/images/a_335.gif"/></th>
+    <th id="box_17_16"><img id="335" src="/images/a_336.gif"/></th>
+    <th id="box_17_17"><img id="336" src="/images/a_337.gif"/></th>
+    <th id="box_17_18"><img id="337" src="/images/a_338.gif"/></th>
+    <th id="box_17_19"><img id="338" src="/images/a_339.gif"/></th>
+    <th id="box_17_20"><img id="339" src="/images/a_340.gif"/></th>
+  </tr> 
+<tr >
+    <th id="box_18_1" height = "0" width = "0"><img id="340" src="/images/a_341.gif" /></th>
+    <th id="box_18_2" height = "0" width = "0"><img id="341" src="/images/a_342.gif"/></th>
+    <th id="box_18_3" height = "0" width = "0"><img id="342" src="/images/a_343.gif"/></th>
+    <th id="box_18_4" height = "0" width = "0"><img id="343" src="/images/a_344.gif"/></th>
+    <th id="box_18_5" height = "0" width = "0"><img id="344" src="/images/a_345.gif"/></th>
+    <th id="box_18_6" height = "0" width = "0"><img id="345" src="/images/a_346.gif"/></th>
+    <th id="box_18_7"><img id="346" src="/images/a_347.gif"/></th>
+    <th id="box_18_8"><img id="347" src="/images/a_348.gif"/></th>
+    <th id="box_18_9"><img id="348" src="/images/a_349.gif"/></th>
+    <th id="box_18_10"><img id="349" src="/images/a_350.gif"/></th>
+    <th id="box_18_11"><img id="350" src="/images/a_351.gif"/></th>
+    <th id="box_18_12"><img id="351" src="/images/a_352.gif"/></th>
+    <th id="box_18_13"><img id="352" src="/images/a_353.gif"/></th>
+    <th id="box_18_14"><img id="353" src="/images/a_354.gif"/></th>
+    <th id="box_18_15"><img id="354" src="/images/a_355.gif"/></th>
+    <th id="box_18_16"><img id="355" src="/images/a_356.gif"/></th>
+    <th id="box_18_17"><img id="356" src="/images/a_357.gif"/></th>
+    <th id="box_18_18"><img id="357" src="/images/a_358.gif"/></th>
+    <th id="box_18_19"><img id="358" src="/images/a_359.gif"/></th>
+    <th id="box_18_20"><img id="359" src="/images/a_360.gif"/></th>
+  </tr>
+    <tr > 
+    <th id="box_19_1" height = "0" width = "0"><img id="360" src="/images/a_361.gif" /></th>
+    <th id="box_19_2" height = "0" width = "0"><img id="361" src="/images/a_362.gif"/></th>
+    <th id="box_19_3" height = "0" width = "0"><img id="362" src="/images/a_363.gif"/></th>
+    <th id="box_19_4" height = "0" width = "0"><img id="363" src="/images/a_364.gif"/></th>
+    <th id="box_19_5" height = "0" width = "0"><img id="364" src="/images/a_365.gif"/></th>
+    <th id="box_19_6" height = "0" width = "0"><img id="365" src="/images/a_366.gif"/></th>
+    <th id="box_19_7"><img id="366" src="/images/a_367.gif"/></th>
+    <th id="box_19_8"><img id="367" src="/images/a_368.gif"/></th>
+    <th id="box_19_9"><img id="368" src="/images/a_369.gif"/></th>
+    <th id="box_19_10"><img id="369" src="/images/a_370.gif"/></th>
+    <th id="box_19_11" height = "0" width = "0"><img id="370" src="/images/a_371.gif" /></th>
+    <th id="box_19_12" height = "0" width = "0"><img id="371" src="/images/a_372.gif"/></th>
+    <th id="box_19_13" height = "0" width = "0"><img id="372" src="/images/a_373.gif"/></th>
+    <th id="box_19_14" height = "0" width = "0"><img id="373" src="/images/a_374.gif"/></th>
+    <th id="box_19_15" height = "0" width = "0"><img id="374" src="/images/a_375.gif"/></th>
+    <th id="box_19_16" height = "0" width = "0"><img id="375" src="/images/a_376.gif"/></th>
+    <th id="box_19_17"><img id="376" src="/images/a_377.gif"/></th>
+    <th id="box_19_18"><img id="377" src="/images/a_378.gif"/></th>
+    <th id="box_19_19"><img id="378" src="/images/a_379.gif"/></th>
+    <th id="box_19_20"><img id="379" src="/images/a_380.gif"/></th>
+  </tr>
+  <tr > 
+    <th id="box_20_1" height = "0" width = "0"><img id="380" src="/images/a_381.gif" /></th>
+    <th id="box_20_2" height = "0" width = "0"><img id="381" src="/images/a_382.gif"/></th>
+    <th id="box_20_3" height = "0" width = "0"><img id="382" src="/images/a_383.gif"/></th>
+    <th id="box_20_4" height = "0" width = "0"><img id="383" src="/images/a_384.gif"/></th>
+    <th id="box_20_5" height = "0" width = "0"><img id="384" src="/images/a_385.gif"/></th>
+    <th id="box_20_6" height = "0" width = "0"><img id="385" src="/images/a_386.gif"/></th>
+    <th id="box_20_7"><img id="386" src="/images/a_387.gif"/></th>
+    <th id="box_20_8"><img id="387" src="/images/a_388.gif"/></th>
+    <th id="box_20_9"><img id="388" src="/images/a_389.gif"/></th>
+    <th id="box_20_10"><img id="389" src="/images/a_390.gif"/></th>
+    <th id="box_20_11" height = "0" width = "0"><img id="390" src="/images/a_391.gif" /></th>
+    <th id="box_20_12" height = "0" width = "0"><img id="391" src="/images/a_392.gif"/></th>
+    <th id="box_20_13" height = "0" width = "0"><img id="392" src="/images/a_393.gif"/></th>
+    <th id="box_20_14" height = "0" width = "0"><img id="393" src="/images/a_394.gif"/></th>
+    <th id="box_20_15" height = "0" width = "0"><img id="394" src="/images/a_395.gif"/></th>
+    <th id="box_20_16" height = "0" width = "0"><img id="395" src="/images/a_396.gif"/></th>
+    <th id="box_20_17"><img id="396" src="/images/a_397.gif"/></th>
+    <th id="box_20_18"><img id="397" src="/images/a_398.gif"/></th>
+    <th id="box_20_19"><img id="398" src="/images/a_399.gif"/></th>
+    <th id="box_20_20"><img id="399" src="/images/a_400.gif"/></th>
+  </tr>
+</table>
+
+<div style="position: absolute;">
+
+<!-- <div style="position: relative; top: 120px; left: 400px;"><img src="/My.png"></img> -->
+
+</div>
+
+</div>
+
+
+
+
+
+<script type="text/javascript">
+   
+//얘네들은 deletion에만 관여하는애들
+var list_of_images = [];
+var selected_image_ids = {};
+var image_indices = [];
+var new_list = [];
+
+//Global 상태
+var removal_on = 0; // 삭제 활성화
+var addition_on = 0; // 더하기 활성화
+
+//Addition에 관여하는애.
+var row_num;
+var column_num;
+var addition_current_index;
+var static_empty_file_location = "/images/empty.gif"; //이게 깨지는 이유는 ???????
+
+  for (i = 0; i < $("th").length; i++) {
+    list_of_images.push($("th")[i].firstChild.src)
+   
+  }
+  
+  console.log("처음 list_of_images: " + list_of_images);
+
+  $("#prepareremovalButton").click(function(){ //빨 -> 파는 되는데 다시 빨강이안돼요
+    // selected_image_ids = {};
+    // image_indices = [];
+    removal_on = 1;
+    addition_on = 0;
+    addition_current_index = -1;
+    selected_image_ids = {};
+    $("th").css("border","1px solid black");
+    console.log("red square")
+  });
+
+  $("#prepareadditionButton").click(function(){
+      addition_current_index = -1;
+      removal_on = 0;
+      addition_on = 1;
+      selected_image_ids = {};
+      console.log("blue square")
+      $("th").css("border","1px solid black");
+  });
+  
+  $("th").click(function(){
+    if(removal_on==1){
+      if(selected_image_ids[$(this).attr('id')]){
+        //1일겨우
+        selected_image_ids[$(this).attr('id')] = 0  
+        $(this).css("border","1px solid black");
+        
+      }else{
+        //새로운 경우나 취소된경우 
+        selected_image_ids[$(this).attr('id')] = 1;
+        $(this).css("border","5px solid red");
+      }
+      console.log($(this).attr('id') + "를 선택하셨습니다.")
+    }
+
+    if(addition_on==1){
+     
+      
+      var placeholder = $(this).attr('id').split("_");
+      row_num = placeholder[1];
+      column_num = placeholder[2];
+      addition_current_index = (parseInt(row_num)-1)*20 + parseInt(column_num) -1; //이게 img id랑 같음
+      
+      
+
+      console.log('row_num: ' + row_num + " col_num: " + column_num);
+      
+      $("th").css("border","1px solid black");
+      $(this).css("border","5px solid blue"); 
+      
+      console.log("box id: " + $(this).attr('id') + " is selected.")
+    }
+      
+  });
+      
+      
+     $("#removeButton").click(function(){
+        /*
+          select_images dict 보고, 
+          selected_images = {
+            box_1_1:1,
+            box_1_2:0 
+          }
+          key:value라고 했을때 value가 1인애들만 list_of_images에서 제거.
+        // 투명도, 애초에 테이블 길게만들어서 드래그했을때 다음?으로 가도록
+        */
+
+
+        // console.log("버튼을 클릭했습니다.")
+        // console.log("selected_image_ids: "+ selected_image_ids);
+        var list_of_keys = Object.keys(selected_image_ids);
+        //console.log("list_of_keys: " + list_of_keys)
+        // ["box_1_1", "box_1_2"]
+        for (j = 0; j < list_of_keys.length; j++) {
+          // "box_1_1"....
+          if(selected_image_ids[list_of_keys[j]]==1){ //이거 맨 뒤에 닫히는 거 맞나?
+            var id_selector = "#" + list_of_keys[j]
+            //console.log("id_selector: " + id_selector)
+            
+            //console.log(j +" 번째 인덱스의 이미지 패스는" + $(id_selector)[0].firstChild.src) 
+            // $(id_selector).firstChild.src =="/4.png"
+            new_list = []
+            var count= 0;
+            for(k = 0; k < list_of_images.length; k++){
+              if($(id_selector)[0].firstChild.src !=list_of_images[k]){
+                //console.log("비교를 시작합니다." + "첫번째 값: " + $(id_selector)[0].firstChild.src )
+                //console.log("두번째 값: "+list_of_images[k])
+                new_list.push(list_of_images[k]);
+              }
+              else{
+                count ++;
+              }
+            }
+
+            for(m = 0; m < count; m++){
+              new_list.push(static_empty_file_location);
+            }
+            list_of_images=new_list
+            
+          }   
+        }
+
+        console.log("revised list: " +  list_of_images)
+        fill_in_the_box(list_of_images);
+        addition_on = 0;
+        removal_on = 0;
+        $("th").css("border","1px solid black");
+      
+      }); //remove 끝
+
+     $("#addButton").click(function(){
+        if(addition_current_index>=0){
+          list_of_images.splice(addition_current_index, 0, static_empty_file_location); //여기 이미지 아이디에 해당하는 곳에 빈캄이미지 넣음..
+          list_of_images.pop();  
+          
+          fill_in_the_box(list_of_images);
+          addition_on = 0;
+          removal_on = 0;
+          $("th").css("border","1px solid black");
+        }
+        else{
+          alert("밀 박스를 입력하세요");
+        }
+        
+     });
+          /*선택을 하면 
+          예)
+          selected_images = {
+            box_1_1:1,
+            box_1_2:0
+          }
+
+          이렇게 나온다. 여기서 키값으로 어떤 박스가 선택되었는지 알고
+          이 empty_space_image_path로 채운다. c://DOCUMENTS/......./empty.jpg
+
+
+          var empty_space_image_path = "[REPLACE] 여기에, 빈칸이미지의 경로로 대체하여 쓰세요 "
+          맨밑에 
+          
+          list_of_images를 잘 작성하는게 중요하고, 그리고, 9개가 넘는지를 확인해야한다.
+          
+          [Psuedo Code]
+          list_of_keys = Object.keys(selected_images)
+          if list_of_keys.length + list_of_images.length > 9:
+            alert("너무 많은 element를 선택했습니다.")
+          else: 
+            list_of_images를 제대로 제어하여 update하는 로직
+            
+          fill_in_the_box(list_of_images)
+
+          */
+      //})
+
+      function fill_in_the_box(list_of_image){
+        /*
+        인덱스:    0      1      2
+        리스트: [1.png, 2.png, 7.png.......] 칸개수만큼 default
+        
+        
+        */
+
+
+        for (i = 0; i < list_of_images.length; i++) {
+          var string_buffer = "#" + i; 
+          console.log(i+"번째 칸에 " + list_of_images[i]);
+          $(string_buffer).attr('src', list_of_images[i]);
+          // $(string_buffer).attr('width', 700); 
+          
+        }
+      }
+
+      /*
+        이미지 밀리는 기능을 하기 위해 유지하고있는 데이터가, list_of_images고, 이걸로 
+        7개 ["/1.png", "/4.png", "/5.png", "/6.png", "/7.png", "/8.png", "/9.png"]
+        box_1_1 —> 0번째 인덱스를 넣고. 
+        box_1_2 —> 1번쨰 인덱스를 넣고,
+        .
+        .
+        .
+        .
+        .
+        box_3_1 —> 6번째 인덱스를 넣는다. 
+      */
+  
+   
+  </script>
+
+
+
+
+</body>
+
+
+
+
+</html>
